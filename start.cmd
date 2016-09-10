@@ -1,0 +1,1 @@
+start MlitaPractices/bin/Debug/MlitaPractices.exe
