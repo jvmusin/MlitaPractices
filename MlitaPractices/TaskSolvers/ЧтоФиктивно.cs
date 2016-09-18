@@ -36,7 +36,7 @@ namespace MlitaPractices.TaskSolvers
 		/// </summary>
 		/// <param name="variableIndex">Индекс проверяемой переменной.</param>
 		/// <param name="results">Результаты работы функции.</param>
-		/// <returns></returns>
+		/// <returns>Фиктивна ли переменная.</returns>
 		private static bool IsFictitious(int variableIndex, FunctionResults results)
 		{
 			return Enumerable.Range(0, 1 << results.VariablesCount)
