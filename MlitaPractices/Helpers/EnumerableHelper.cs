@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MlitaPractices.Helpers
@@ -18,6 +19,18 @@ namespace MlitaPractices.Helpers
 		public static IEnumerable<TElement> NotNull<TElement>(this IEnumerable<TElement> source)
 		{
 			return source.Where(x => x != null);
+		}
+
+		/// <summary>
+		/// Выполнить указанное действие над всеми элементами последовательности.
+		/// </summary>
+		/// <typeparam name="TElement">Тип элементов последовательности.</typeparam>
+		/// <param name="source">Исходная последовательность.</param>
+		/// <param name="action">Действие, которое необходимо выполнить</param>
+		public static void ForEach<TElement>(this IEnumerable<TElement> source, Action<TElement> action)
+		{
+			foreach (var element in source)
+				action(element);
 		}
 	}
 }
