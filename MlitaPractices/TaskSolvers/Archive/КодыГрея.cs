@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MoreLinq;
+using MlitaPractices.Helpers;
 using NUnit.Framework;
 
 namespace MlitaPractices.TaskSolvers.Archive
@@ -38,7 +38,7 @@ namespace MlitaPractices.TaskSolvers.Archive
 		[Test]
 		public void Test()
 		{
-			Solver.Solve(3).ForEach(result => Console.WriteLine(result));
+			Solver.Solve(3).ForEach(Console.WriteLine);
 		}
 	}
 }

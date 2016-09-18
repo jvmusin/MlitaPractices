@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using MlitaPractices.Helpers;
-using MoreLinq;
 
 namespace MlitaPractices.ConsoleRunner
 {
@@ -29,7 +28,7 @@ namespace MlitaPractices.ConsoleRunner
 		{
 			taskSolverRunners
 				.Select((solver, index) => $"{index}: {solver.SolverName}")
-				.ForEach(solverName => Console.WriteLine(solverName));
+				.ForEach(Console.WriteLine);
 		}
 	}
 }
