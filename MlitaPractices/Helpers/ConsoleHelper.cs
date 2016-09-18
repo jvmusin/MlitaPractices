@@ -24,7 +24,7 @@ namespace MlitaPractices.Helpers
 		/// </summary>
 		/// 
 		/// <param name="phrase">Вопрос, который необходимо задать в консоли.</param>
-		/// <returns>Введённая в консоли строка.</returns>
+		/// <returns>Введённое в консоли число.</returns>
 		public static int AskInt(string phrase = "")
 		{
 			return int.Parse(Ask(phrase));
@@ -34,7 +34,7 @@ namespace MlitaPractices.Helpers
 		/// Прочитать строку из консоли.
 		/// </summary>
 		/// 
-		/// <returns>Прочитанная из консоли строка.</returns>
+		/// <returns>Введённая в консоли строка.</returns>
 		public static string ReadLine()
 		{
 			return Console.ReadLine();
