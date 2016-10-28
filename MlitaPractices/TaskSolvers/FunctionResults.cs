@@ -11,6 +11,7 @@ namespace MlitaPractices.TaskSolvers
 	/// </summary>
 	public class FunctionResults : IEnumerable<bool>
 	{
+		public int ResultsCount => 1 << VariablesCount;
 		public int VariablesCount { get; }
 		private readonly bool[] functionResults;
 
