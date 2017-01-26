@@ -13,7 +13,8 @@ namespace MlitaPractices
 				new ЕдиничныеНаборыКонсольный(),
 				new ЧтоФиктивноКонсольный(),
 				new НомерФункцииКонсольный(),
-				new МинимизацияКонсольный()
+				new МинимизацияКонсольный(),
+                new СДНФКонсольный()
 			};
 			var taskSolverConsoleSelector = new TaskSolverConsoleSelector(runners);
 
