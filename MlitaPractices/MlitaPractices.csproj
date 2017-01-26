@@ -59,6 +59,7 @@
     <Compile Include="TaskSolvers\Минимизация.cs" />
     <Compile Include="TaskSolvers\НомерФункции.cs" />
     <Compile Include="TaskSolvers\СДНФ.cs" />
+    <Compile Include="TaskSolvers\СКНФ.cs" />
     <Compile Include="TaskSolvers\ЧтоФиктивно.cs" />
   </ItemGroup>
   <ItemGroup>

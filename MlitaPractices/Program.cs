@@ -14,7 +14,8 @@ namespace MlitaPractices
 				new ЧтоФиктивноКонсольный(),
 				new НомерФункцииКонсольный(),
 				new МинимизацияКонсольный(),
-                new СДНФКонсольный()
+                new СДНФКонсольный(),
+                new СКНФКонсольный()
 			};
 			var taskSolverConsoleSelector = new TaskSolverConsoleSelector(runners);
 
