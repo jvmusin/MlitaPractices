@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using MlitaPractices.ConsoleRunner;
 using NUnit.Framework;
 
@@ -50,6 +49,7 @@ namespace MlitaPractices.TaskSolvers
                 {
                     "abc", "abC", "aBc", "ABc"
                 });
+                yield return new TestCaseData(new FunctionResults(2, "00000000")).Returns(new string[0]);
             }
         }
     }
