@@ -27,6 +27,7 @@ namespace MlitaPractices.TaskSolvers
         }
     }
 
+    [TestFixture]
     public class СДНФТесты
     {
         private static readonly СДНФ Solver = new СДНФ();

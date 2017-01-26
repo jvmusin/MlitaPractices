@@ -28,6 +28,7 @@ namespace MlitaPractices.TaskSolvers
         }
     }
 
+    [TestFixture]
     public class СКНФТесты
     {
         private static readonly СКНФ Solver = new СКНФ();
