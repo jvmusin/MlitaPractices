@@ -60,6 +60,7 @@
     <Compile Include="TaskSolvers\НомерФункции.cs" />
     <Compile Include="TaskSolvers\СДНФ.cs" />
     <Compile Include="TaskSolvers\СКНФ.cs" />
+    <Compile Include="TaskSolvers\Подформула.cs" />
     <Compile Include="TaskSolvers\ЧтоФиктивно.cs" />
   </ItemGroup>
   <ItemGroup>
