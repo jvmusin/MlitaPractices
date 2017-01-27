@@ -33,9 +33,9 @@ namespace MlitaPractices.TaskSolvers
         private static readonly СДНФ Solver = new СДНФ();
 
         [Test, TestCaseSource(nameof(TestCases))]
-        public string[] Test(FunctionResults args)
+        public List<string> Test(FunctionResults args)
         {
-            return Solver.Solve(args).ToArray();
+            return Solver.Solve(args);
         }
 
         private static IEnumerable<TestCaseData> TestCases
@@ -50,7 +50,7 @@ namespace MlitaPractices.TaskSolvers
                 {
                     "abc", "abC", "aBc", "ABc"
                 });
-                yield return new TestCaseData(new FunctionResults(2, "00000000")).Returns(new string[0]);
+                yield return new TestCaseData(new FunctionResults(3, "00000000")).Returns(new string[0]);
             }
         }
     }

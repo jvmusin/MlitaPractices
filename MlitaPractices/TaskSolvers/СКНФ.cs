@@ -34,9 +34,9 @@ namespace MlitaPractices.TaskSolvers
         private static readonly СКНФ Solver = new СКНФ();
 
         [Test, TestCaseSource(nameof(TestCases))]
-        public string[] Test(FunctionResults args)
+        public List<string> Test(FunctionResults args)
         {
-            return Solver.Solve(args).ToArray();
+            return Solver.Solve(args);
         }
 
         private static IEnumerable<TestCaseData> TestCases
