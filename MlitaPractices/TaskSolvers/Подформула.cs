@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MlitaPractices.ConsoleRunner;
+using NUnit.Framework;
 
 namespace MlitaPractices.TaskSolvers
 {
@@ -8,7 +9,7 @@ namespace MlitaPractices.TaskSolvers
     {
         public ISet<string> Solve(string s)
         {
-            var result = new HashSet<string>();
+            var result = new SortedSet<string>();
             Find(s, 0, result);
             return result;
         }
@@ -50,6 +51,41 @@ namespace MlitaPractices.TaskSolvers
             }
             result.Add(curResult);
             return curResult;
+        }
+    }
+
+    [TestFixture]
+    public class ПодформулаТесты
+    {
+        private static readonly Подформула Solver = new Подформула();
+
+        [Test, TestCaseSource(nameof(TestCases))]
+        public ISet<string> Test(string args)
+        {
+            return Solver.Solve(args);
+        }
+
+        private static IEnumerable<TestCaseData> TestCases
+        {
+            get
+            {
+                yield return new TestCaseData("a+b").Returns(new SortedSet<string>
+                {
+                    "a", "b", "a+b"
+                });
+                yield return new TestCaseData("a+(b*c)").Returns(new SortedSet<string>
+                {
+                    "a", "b", "c", "b*c", "(b*c)", "a+(b*c)"
+                });
+                yield return new TestCaseData("(a+b)*c").Returns(new SortedSet<string>
+                {
+                    "a", "b", "c", "a+b", "(a+b)", "(a+b)*c"
+                });
+                yield return new TestCaseData("a*-((b/e)+-c)").Returns(new SortedSet<string>
+                {
+                    "a", "b", "c", "-c", "e", "b/e", "(b/e)", "(b/e)+-c", "((b/e)+-c)", "-((b/e)+-c)", "a*-((b/e)+-c)"
+                });
+            }
         }
     }
 
