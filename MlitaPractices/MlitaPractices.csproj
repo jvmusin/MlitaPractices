@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskSolvers\ЕдиничныеНаборы.cs" />
     <Compile Include="TaskSolvers\Archive\КодыГрея.cs" />
+    <Compile Include="TaskSolvers\МашинаТьюринга9.cs" />
     <Compile Include="TaskSolvers\Минимизация.cs" />
     <Compile Include="TaskSolvers\НомерФункции.cs" />
     <Compile Include="TaskSolvers\СДНФ.cs" />

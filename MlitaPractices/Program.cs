@@ -17,7 +17,8 @@ namespace MlitaPractices
 				new МинимизацияКонсольный(),
                 new СДНФКонсольный(),
                 new СКНФКонсольный(),
-                new ПодформулаКонсольный()
+                new ПодформулаКонсольный(),
+                new МашинаТьюринга9Консольный()
 			};
 			var taskSolverConsoleSelector = new TaskSolverConsoleSelector(runners);
 
